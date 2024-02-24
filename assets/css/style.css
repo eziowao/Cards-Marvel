@@ -1,0 +1,55 @@
+body {
+    background-color: #314A60;
+} 
+
+.cards {
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.card {
+    min-width: 280px;
+    max-width: 330px;
+    height: 550px;
+    margin: 5px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.white{
+    background-color: white;
+}
+
+.gold{
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);}
+
+.card img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover; 
+}
+
+h6, h3, p {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #314A60;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
